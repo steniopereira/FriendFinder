@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FriendFinder</title>
+    <!--Add favicon-->
+    <link rel="shortcut icon" type="image/png" href="./favicon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" /> -->
+
+</head>
+
+<body>
+
+    <div class="container text-center">
+        <h2>Survey questions</h2>
+        <h4>Name (Required)</h4>
+            <input type="text" id="name" class="form-control" required>
+        <h4>Link to photo (Required)</h4>
+            <input type="text" id="photo" class="form-control" required>
+
+        <h3>Question 1</h3>
+            <h4>I think Step Brothers is hysterical.</h4>
+            <select class="chosen-select" id="q1">
+                <option value=""></option>
+                <option value="1">1 (Strongly disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3">3 (Somewhat agree)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        <h3>Question 2</h3>
+            <h4>I think the Shawshank Redemption is an amazing story.</h4>
+            <select class="chosen-select" id="q2">
+                <option value=""></option>
+                <option value="1">1 (Strongly disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3">3 (Somewhat agree)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        <h3>Question 3</h3>
+            <h4>Avril Lavigne is a Punk Rock musician.</h4>
+            <select class="chosen-select" id="q3">
+                <option value=""></option>
+                <option value="1">1 (Strongly disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3">3 (Somewhat agree)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        <h3>Question 4</h3>
+            <h4>I like the color blue.</h4>
+            <select class="chosen-select" id="q4">
+                <option value=""></option>
+                <option value="1">1 (Strongly disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3">3 (Somewhat agree)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        <h3>Question 5</h3>
+            <h4>I like red meat.</h4>
+            <select class="chosen-select" id="q5">
+                <option value=""></option>
+                <option value="1">1 (Strongly disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3">3 (Somewhat agree)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        <h3>Question 6</h3>
+            <h4>I prefer great pizza over a great hamburger.</h4>
+            <select class="chosen-select" id="q6">
+                <option value=""></option>
+                <option value="1">1 (Strongly disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3">3 (Somewhat agree)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        <h3>Question 7</h3>
+            <h4>Comicon is for nerds without a life.</h4>
+            <select class="chosen-select" id="q7">
+                <option value=""></option>
+                <option value="1">1 (Strongly disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3">3 (Somewhat agree)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        <h3>Question 8</h3>
+            <h4>I spend too much time on social media.</h4>
+            <select class="chosen-select" id="q8">
+                <option value=""></option>
+                <option value="1">1 (Strongly disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3">3 (Somewhat agree)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        <h3>Question 9</h3>
+            <h4>I think President Donald Trump is like a piece of lint... useless.</h4>
+            <select class="chosen-select" id="q9">
+                <option value=""></option>
+                <option value="1">1 (Strongly disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3">3 (Somewhat agree)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        <h3>Question 10</h3>
+            <h4>Surveys are fun.</h4>
+            <select class="chosen-select" id="q10">
+                <option value=""></option>
+                <option value="1">1 (Strongly disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3">3 (Somewhat agree)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            
+        <br><br><br>
+        <button type="submit" class="btn btn-primary btn-lg" id="submitBtn"><i class="fa fa-check-square-o" aria-hidden="true"></i>Submit</button>
+        <a href="/"><button type="button" class="btn btn-lg btn-danger"><span class="glyphicon glyphicon-home"></span>   Go home</button></a>
+        <br>
+        <footer class="footer">
+            <div class="container text-right">
+                <p><a href="/api/friends">API Friends List</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal -->
+    <div id="results-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title">Best friend</h2>
+                </div>
+                <div class="modal-body text-center">
+                    <h2 id="match-name"></h2>
+                    <img id="match-img" src="" alt="photo">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#submitBtn").on("click", function() {
+                //form validation
+                function validateForm() {
+                    var isValid = true;
+                    $('.validate').each(function() {
+                        if ($(this).val() === ''){
+                            isValid = false;
+                        }
+                    });
+        
+                    $('.browser-default').each(function() {
+                        if ($(this).val() === ""){
+                            isValid = false;
+                        }
+                    });
+        
+                    return isValid;
+                }
+        
+                //if everything is filled
+                if (validateForm() == true) {
+                    //creates a new friend from the values submitted
+                    var newFriend = {
+                        name: $('#name').val().trim(),
+                        profilePic: $('#photo').val().trim(),
+                        scores: [
+                            $('#q1').val(),
+                            $('#q2').val(),
+                            $('#q3').val(),
+                            $('#q4').val(),
+                            $('#q5').val(),
+                            $('#q6').val(),
+                            $('#q7').val(),
+                            $('#q8').val(),
+                            $('#q9').val(),
+                            $('#q10').val(),
+                        ]
+                    };
+        
+                    //Grabs current URL of website
+                    var currentURL = window.location.origin;
+        
+                    //AJAX posts the data to friends API.
+                    $.post(currentURL + "/api/friends", newFriend, function(data) {
+                        //Grab the result from the AJAX post so that the best match's name and photo are displayed.
+                        $("#matchName").text(data.name);
+                        $("#matchPic").attr("src", data.profilePic);
+        
+                    });
+                    // Show the modal with the best match
+                    $("modal").modal();
+        
+                    //clear form after submission
+                    $('#name').val("");
+                    $('#photo').val("");
+                    $('#q1').val("");
+                    $('#q2').val("");
+                    $('#q3').val("");
+                    $('#q4').val("");
+                    $('#q5').val("");
+                    $('#q6').val("");
+                    $('#q7').val("");
+                    $('#q8').val("");
+                    $('#q9').val("");
+                    $('#q10').val("");
+                } else {
+                    alert("Please fill out ALL fields before submitting survey!")
+                }
+
+            });
+
+        });
+        </script>
+
+</body>
+
+</html>
